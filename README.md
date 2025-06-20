@@ -23,33 +23,19 @@ This python file includes all the SQL code used to create the database, creating
 | # | Script | Purpose | Outputs |
 |---|--------|---------|---------|
 | 1 | **Cleaned Final Code.py** | Cleans raw tweets, removes spam/weird accounts | `Cleaned Dataset/*.json` |
-
 | 2 | **conversation extraction.py** | Reconstructs user ↔ airline conversations | `extracted_conversations/*.json` |
-
 | 3 | **conversationsbutindividualtweets.py** | Collects **non‑airline** tweets for sentiment analysis | `all_non_airline_tweets.json` |
-
 | 4 | **sentimentanalysis.py** | Adds sentiment analysis to user conversations tweets | `all_non_airline_tweets_with_sentiment.json` |
-
 | 5 | **conversations_with_sentiment.py** | Merges sentiment back into full conversations | `conversations_with_sentiment/*.json` |
-
 | 6 | **Upload users and tweets to db.py** | Bulk‑loads users and tweets into PostgreSQL tables `users` and `tweets` | Rows inserted into DB | (Running won't give a visual output)
-
 | 7 | **conversations upload.py** | Bulk‑loads conversation‑level data (with sentiment) into table `conversations` | Rows inserted into DB | (Running won't give a visual output)
-
 | 8 | **sentiment_sankey.py** | Sankey diagram of sentiment flow (all airlines) | `sentiment_sankey.html` |
-
 | 9 | **sentiment_sankey_lufthansa.py** | Same Sankey but filtered to Lufthansa | `sentiment_sankey_lufthansa.html` |
-
 | 10 | **conversations_per_airline.py** | Bar‑chart of conversation counts per airline | `conversations_per_airline.png` |
-
 | 11 | **LUFTHANSA CONVOS PER REGION.py** | Bar‑chart of Lufthansa conversation counts per user region | Displays matplotlib bar chart |
-
 | 12 | **T‑Test Sentiment Evolution.py** | Welch t‑tests + boxplots of sentiment change by region & airline | Two matplotlib windows |
-
 | 13 | **geocoding the data.py** | Geocode free‑text locations | `geocoded_locations.csv` |
-
 | 14 | **turning geocoded data to regions.py** | Map lat/lon → country/region | `geocoded_with_region.csv` |
-
 | 15 | **ordering the columns for geocoding.py** | Tidy geocode CSV columns | `geocoded_ordered_no_nulls_UTF-8.csv` |
 
 ---
